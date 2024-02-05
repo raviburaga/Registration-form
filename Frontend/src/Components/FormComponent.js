@@ -19,7 +19,7 @@ function FormComponent() {
     console.log("submit Data",formData);
     try {
         
-      await axios.post('http://localhost:3002/mongodb', formData)
+      await axios.post('http://localhost:3002/api/mongodb', formData)
       console.log("FormData added to db");
     } catch (error) {
       console.error('Error:', error.message);

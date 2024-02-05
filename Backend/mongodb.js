@@ -22,7 +22,7 @@ dbconnection.connect()
         const database = dbconnection.db(databaseName);
         const formDataCollection = database.collection('PotfolioFormData');
 
-        app.post('/mongodb', async (req,res)=>{
+        app.post('/api/mongodb', async (req,res)=>{
             const {name,email,phone,date,password,checkbox} = req.body;
 
             try{
